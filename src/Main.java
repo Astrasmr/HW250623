@@ -3,8 +3,12 @@ public class Main {
         task1();
         task2();
         task3();
-        task4();
-        task5();
+        task4(95);
+        task5(2);
+        task5(4);
+        task5(7);
+        task5(10);
+        task5(13);
     }
         public static void task1 () {
             System.out.println(" Задача 1");
@@ -36,44 +40,31 @@ public class Main {
     }
 
 
-    public static void task4 () {
+    public static void task4 (int distance) {
         System.out.println(" Задача 4");
-        private static int checkDeliveryDay(int distance){
         int day = 0;
         if (distance<20){
             day ++;
+            System.out.println("Потребуется дней:" + day);
         } else if
         (20<=distance&&distance<60){
             day+=2;
+            System.out.println("Потребуется дней:" + day);
         } else if
         (60<=distance&&distance<=100){
             day+=3;
+            System.out.println("Потребуется дней:" + day);
         } else {
-            day +=4;
+            System.out.println("Доставки нет");
         }
-        return day;
-    } private static void task(3); {
-        System.out.println ("задача 3");
-        int deliveryDistance = 60;
-        int deliverydays = checkDeliveryDay(deliveryDistance);
-        if(deliverydays<=3){
-            System.out.println("Потребуется дней: " + (deliverydays));
-        } else }
-    System.out.println("доставки нет");}
-
-    private static byte checkDeliveryDay(double deliveryDistance) {
-        return 0;
     }
-}
-}
 
-    public static void task5 () {
+    public static void task5 (int mountNumber) {
         System.out.println("Задача 5");
-    int mountNumber = 12;
-    switсh (mountNumber) {
+        switch (mountNumber) {
         case 12:
-            case 1:
-                case 2:
+        case 1:
+        case 2:
         System.out.println(" Зима ");
         break;
         case 3:
@@ -90,8 +81,11 @@ public class Main {
         case 10:
         case 11:
         System.out.println(" Осень ");
-        default;
+        break;
+        default:
         System.out.println(" Неверный номер месяца ");
         }
 }
+}
+
 
